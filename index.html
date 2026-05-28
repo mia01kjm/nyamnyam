@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>냠냠 AI 🍱</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<header>
+  <h1>🍱 냠냠 AI</h1>
+  <p>음식 이름만 입력하면 칼로리를 알려드려요!</p>
+</header>
+
+<section class="api-section">
+
+  <input
+    type="password"
+    id="apiKeyInput"
+    placeholder="Google Gemini API Key 입력"
+  />
+
+  <button onclick="saveApiKey()">
+    저장
+  </button>
+
+  <p id="apiStatus"></p>
+
+</section>
+
+<section class="search-section">
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="foodInput"
+      placeholder="음식 이름 입력"
+      onkeydown="if(event.key==='Enter') searchCalorie()"
+    />
+
+    <button onclick="searchCalorie()">
+      🔍 검색
+    </button>
+
+  </div>
+
+</section>
+
+<div id="loading" class="hidden">
+  <p>AI가 분석 중... 🤖</p>
+</div>
+
+<div id="errorMsg" class="error hidden"></div>
+
+<section id="resultCard" class="result hidden">
+
+  <h2 id="resFoodName"></h2>
+
+  <div class="calorie-big">
+    <span id="resCalorie">0</span> kcal
+  </div>
+
+  <p id="resComment"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
