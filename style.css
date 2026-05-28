@@ -1,0 +1,59 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff7f3;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #ff7b54;
+}
+
+.api-section,
+.search-section,
+.result {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #ffd3c8;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #ff7b54;
+  color: white;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.calorie-big {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff7b54;
+  margin: 20px 0;
+}
+
+.error {
+  background: pink;
+  padding: 10px;
+  border-radius: 10px;
+}
